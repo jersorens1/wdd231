@@ -1,0 +1,306 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #3A506B;
+    color: #FFF8F0;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    max-width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #000001;
+}
+
+h1 {
+    background-color: #3A506B;
+    color: #FFF8F0;
+    font-size: 45px;
+    font-weight: 400;
+    padding: 30px;
+    text-align: center;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #FFF8F0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.show .nav {
+    display: flex;
+}
+
+/* Menu button styling */
+#menu {
+    font-size: 18px;
+    border: 0;
+    background: none;
+    color: #5BC0BE;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+#menu::before {
+    content: '☰';
+    font-size: 40px;
+}
+
+#menu.show::before {
+    content: 'X';
+}
+
+/* Navigation menu styling */
+.nav ul {
+    background-color: #392F5A;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #FFF8F0;
+    display: block;
+    padding: 10px 40px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    transition: 0.5s;
+    background-color: #5BC0BE;
+    color: #392F5A;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 40%;
+    grid-template-rows: auto;
+    gap: 40px;
+    margin: 30px;
+}
+
+.card1, .card2, .card3 {
+    display: block;
+}
+
+.card1, .card2 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000001;
+}
+
+.card1 {
+    grid-column: 1 / 3;
+    height: 100%;
+    align-items: center;
+}
+
+.card1 ul {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.card1 li {
+    margin-bottom: 10px;
+}
+
+.card2 {
+    grid-column: 3 / 4;
+}
+
+.card2 div {
+    display: grid;
+    place-items: center;
+}
+
+.cm {
+    display: flex;
+    position: relative;
+    margin: 0;
+    height: 280px;
+    padding: 20px;
+}
+
+.card2 p {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.card3 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000001;
+    grid-column: 1 / 4;
+}
+
+h2 {
+    background-color: #3A506B;
+    color: #FFF8F0;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button-group button {
+    display: inline-block;
+    padding: 10px 60px;
+    border: none;
+    background-color: #295278;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #5BC0BE;
+}
+
+.course-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#courseContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.completed {
+    background-color: #c8e6c9;
+    color: #388e3c;
+}
+
+#credits {
+    display: flex;
+    padding-left: 20px;
+}
+
+.course-details {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.footer {
+    grid-column: 1 / 4;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    background: #3A506B;
+    color: #FFF8F0;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+    }
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 767px) {
+    header {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #392F5A;
+        z-index: 1;
+    }
+
+    .nav.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav a {
+        display: block;
+        flex: 1 1 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card1, .card2, .card3 {
+        width: 100%;
+    }
+}

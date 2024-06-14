@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremy Sorensen" />
+    <meta name="description" content="WDD 231 - Web Frontend Development - Jeremy Sorensen" />
+    <title>WDD 231 - Web Frontend Development - Jeremy Sorensen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img src="images/Jeremy_Profile-sm.webp" alt="profile image" class="profile">
+        <h1>Jeremy Sorensen</h1>
+        <button id="menu"></button>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="#" id="home-button">Home</a></li>
+            <li><a href="#" id="chamber-button">Chamber</a></li>
+            <li><a href="https://github.com/jersorens1" target="_blank" id="github-button">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/jeremysorensen1" id="linkedin-button">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="card1">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="card2">
+            <h2>West Jordan, Utah, USA</h2>
+            <div>
+                <img src="images/copper-mine-sm.webp" alt="copper mine" class="cm">
+            </div>
+            <p>Bingham Canyon Mine<br> (west of West Jordan)</p>
+        </section>
+        <section class="card3">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="button-group">
+                <button id="allButton">All</button>
+                <button id="cseButton">CSE</button>
+                <button id="wddButton">WDD</button>
+            </div>
+            <div id="courseContainer"></div>
+            <div class="course-details" id="course-details"></div>
+            <div id="credits">
+                <p>Total Credits: <span id="totalCredits">0</span></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="currentyear"></span> Jeremy Sorensen - Utah</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
