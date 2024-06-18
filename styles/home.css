@@ -51,11 +51,12 @@ p {
 
 /* Menu button styling */
 #menu {
-    font-size: 18px;
+    font-size: 2rem;
     border: 0;
     background: none;
-    color: #5BC0BE;
+    color: #FFF8F0;
     position: absolute;
+    cursor: pointer;
     top: 20px;
     right: 40px;
 }
@@ -70,8 +71,11 @@ p {
 }
 
 /* Navigation menu styling */
-.nav ul {
+.nav {
     background-color: #392F5A;
+}
+
+.nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -96,6 +100,12 @@ p {
     transition: 0.5s;
     background-color: #5BC0BE;
     color: #392F5A;
+}
+
+.nav a:active {
+    background-color: #5BC0BE;
+    color: #392F5A;
+    font-weight: 500;
 }
 
 main {
