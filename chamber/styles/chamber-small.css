@@ -7,6 +7,7 @@
 
 #cityLogo {
     float: left;
+    width: 100px;
     padding: 0 2rem 1rem 1rem;
 }
 
@@ -59,7 +60,6 @@
 
 .list-view .member-card img {
     margin-right: 20px;
-    align-items: left;
     margin: 0;
 }
 
