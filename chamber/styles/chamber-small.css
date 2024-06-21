@@ -1,0 +1,218 @@
+:root {
+    --primaryColor: #f5666f;
+    --secondaryColor: #92a4af;
+    --backgroundColor: #130328;
+    --textColor: #fceccb;
+}
+
+#cityLogo {
+    float: left;
+    padding: 0 2rem 1rem 1rem;
+}
+
+/* CSS for grid and list view */
+
+#main-content {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #39205a;
+}
+
+#member-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 3em;
+}
+
+#member-container a {
+    text-decoration: none;
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+.member-card {
+    border: 2px solid var(--primaryColor);
+    background-color: var(--backgroundColor);
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 0 10px var(--secondaryColor);
+}
+
+.grid-view .member-card {
+    width: calc(33.33% - 40px);
+    text-align: center;
+}
+
+.list-view .member-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.list-view .member-card img {
+    margin-right: 20px;
+    align-items: left;
+    margin: 0;
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+header, footer {
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+    padding: 1rem;
+}
+
+footer {
+   text-align: center;
+   display: flex;
+   padding: 1rem;
+   width: 100%;
+   bottom: 0;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 1rem 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+/* NAVIGATION ITEMS */
+nav {
+    background-color: var(--backgroundColor);
+}
+
+#menuButton::before {
+    content: "\2630";
+}
+
+#menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--textColor);
+    cursor: pointer;
+    width: 44px;
+    text-align: right;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: .9rem;
+    right: 4vw;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+li.current-menu-item a {
+    background-color: #39205a;
+    border-radius: 5px;
+}
+
+ul.menuLinks {
+    list-style-type: none; 
+}
+
+#menuButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+#viewToggle {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#grid, #list {
+    padding: .7em;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    border: var(--primaryColor) solid 1px;
+    border-radius: 5px;
+}
+
+#members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+#members section {
+    background-color: var(--backgroundColor);
+    padding: 20px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 10px;
+}
+
+#members p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: var(--textColor);
+}
+
+#members img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px){
+   footer {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .grid-view .member-card {
+    width: calc(47% - 20px);
+   }
+
+   .list-view .member-card {
+    width: 100%;
+   }
+}
+
+@media (max-width: 480px) {
+    .grid-view .member-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremy Sorensen" />
+    <meta name="description" content="WDD 231 - Chamber of Commerce Directory" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 231 - Chamber of Commerce, Jeremy Sorensen">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/last-city-icon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <script src="scripts/chamber.js" defer></script>
+    <title>Last City Chamber of Commerce</title>
+</head>
+<body>
+    
+    <header>
+        <img src="images/Last-City-logo.svg" id="cityLogo" width="100px" alt="Last City Logo">
+        <h1>Last City</h1>
+        <p>Chamber of Commerce</p>
+        <nav id="animateme">
+            <button id="menuButton"></button>
+            <ul class="menuLinks">
+                <li><a href="#" title="Home">Home</a></li>
+                <li class="current-menu-item"><a href="#" title="Directory">Directory</a></li>
+                <li><a href="#" title="Join">Join</a></li>
+                <li><a href="#" title="Discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <div id="viewToggle">
+            <button id="grid">&#9783; GRID</button>
+            <button id="list">&#9776; LIST</button>
+        </div>
+        <div id="member-container" class="grid-view"></div>
+    </main>
+    <footer>
+        <div id="left-footer">
+            <p>
+            Last City Chamber of Commerce<br>
+            7777 Main St<br>
+            Last City, LC 77777<br>
+            LCCOC@lastcityemail.com<br>
+            (777) 777-7777
+        </p>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.youtube.com">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://www.x.com">
+                <img src="images/x.svg" alt="X">
+            </a>
+            <a href="https://www.indeed.com">
+                <img src="images/indeed.svg" alt="Indeed">
+            </a>
+        </div>
+
+        <div id="right-footer">
+        WDD 231 Chamber Project<br>
+        Jeremy Sorensen<br>
+        &copy; <span id="currentyear"></span> Last City Chamber of Commerce<br>
+        <span id="lastmodified"></span>
+    </div>
+
+    </footer>
+</body>
+</html>

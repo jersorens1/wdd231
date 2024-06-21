@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold';
+        font-size: 7.7px;
+      }
+
+      .cls-1, .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #cf3440;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-4" width="100" height="100"/>
+  </g>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <path class="cls-3" d="M45.4,33.6c-4.7-5-12.6-5.1-17.4-.3s0,0,0,0c-4.8-4.8-12.7-4.7-17.4.3-4.6,4.9-4.1,12.7.6,17.4,5.3,5.3,10.5,10.5,15.8,15.8.6.6,1.6.6,2.2,0l15.8-15.8c4.7-4.7,5.2-12.6.6-17.4h-.2Z"/>
+        <path class="cls-4" d="M35.5,43.7c-1.2,0-2.2.8-2.6,1.8h-2.4l-2.1.7h-.2l-2.4-.9c-.1,0-.3,0-.4.2l-1.2,3.1c-.1.3-.5.2-.6,0l-2-10.5c0-.3-.4-.3-.5,0l-4.3,7.7s-.1,0-.3,0H7.6c-.5,0-1,.4-1,1s.4,1,1,1h10.1c.1,0,.2,0,.3,0l2.3-4.1c.1-.2.5-.2.5,0l2.2,11.9c0,.3.5.3.6,0l3-7.5c0,0,.2-.2.4-.2l1.2.5h.2l2.4-.8h2.1c.4,1.1,1.4,1.8,2.6,1.8s2.8-1.2,2.8-2.8-1.2-2.8-2.8-2.8h0Z"/>
+      </g>
+      <g>
+        <g class="cls-2">
+          <text class="cls-1" transform="translate(50.4 42)"><tspan x="0" y="0">Healthcare</tspan></text>
+        </g>
+        <g class="cls-2">
+          <text class="cls-1" transform="translate(50.4 51)"><tspan x="0" y="0">Innovations</tspan></text>
+        </g>
+        <g class="cls-2">
+          <text class="cls-1" transform="translate(50.4 60)"><tspan x="0" y="0">Group</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+@media only screen and (min-width: 768px) {
+
+    #menuButton {
+        display: none;
+    
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: var(--primaryColor);
+        color: var(--backgroundColor);
+        font-weight: 600;
+        transition: .5s;
+        border-radius: 5px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#left-footer, #right-footer {
+    flex: 1;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}

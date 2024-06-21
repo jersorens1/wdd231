@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: ShreeDev0714, 'Shree Devanagari 714';
+        font-size: 9px;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #be1e2d;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" x="27.2" y="15.1" width="47" height="46"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-5" width="100" height="100"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <text class="cls-1" transform="translate(14.5 80.5)"><tspan x="0" y="0">Techsolutions Inc.</tspan></text>
+      <g class="cls-2">
+        <g>
+          <rect class="cls-4" x="28.2" y="16.1" width="44" height="44" rx="4.5" ry="4.5"/>
+          <path class="cls-5" d="M62.1,12.1l-2.7-3-17.4,15.6c-.8-.4-1.7-.7-2.7-.7-3.3,0-6,2.7-6,6s2.7,6,6,6,6-2.7,6-6-.2-1.7-.5-2.4l17.4-15.6ZM39.2,32.1c-1.1,0-2-.9-2-2s.9-2,2-2,2,.9,2,2-.9,2-2,2Z"/>
+          <path class="cls-5" d="M62.1,30.1l-2.7-3-17.4,15.6c-.8-.4-1.7-.7-2.7-.7-3.3,0-6,2.7-6,6s2.7,6,6,6,6-2.7,6-6-.2-1.7-.5-2.4l17.4-15.6ZM39.2,50.1c-1.1,0-2-.9-2-2s.9-2,2-2,2,.9,2,2-.9,2-2,2Z"/>
+          <path class="cls-5" d="M39.2,66.2l2.7,3,17.4-15.6c.8.4,1.7.7,2.7.7,3.3,0,6-2.7,6-6s-2.7-6-6-6-6,2.7-6,6,.2,1.7.5,2.4l-17.4,15.6ZM62.1,46.1c1.1,0,2,.9,2,2s-.9,2-2,2-2-.9-2-2,.9-2,2-2Z"/>
+          <path class="cls-5" d="M39.2,45.2l2.7,3,17.4-15.6c.8.4,1.7.7,2.7.7,3.3,0,6-2.7,6-6s-2.7-6-6-6-6,2.7-6,6,.2,1.7.5,2.4l-17.4,15.6ZM62.1,25.1c1.1,0,2,.9,2,2s-.9,2-2,2-2-.9-2-2,.9-2,2-2Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
