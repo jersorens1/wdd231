@@ -1,0 +1,42 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.card {
+    border: 2px solid #525b3d;
+    background-color: #d0e2a6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #2c3121;
+    text-align: center;
+    margin: 4rem;
+}
+
+.card h2 {
+    color: #525b3d;
+    margin: 1rem 0;
+}
+
+.card #current-temp {
+    color: #8114a5;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: .3rem 0;
+}
+
+.card p {
+    font-size: 2rem;
+}
+
+figcaption {
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+}
