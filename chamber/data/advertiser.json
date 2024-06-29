@@ -1,0 +1,29 @@
+{
+    "business": [
+        {
+            "name": "Fashion Trends Boutique",
+            "email": "ftb@fashionemail.com",
+            "phoneNumber": "456-789-0123",
+            "websiteUrl": "https://fashiontrends.example.com",
+            "imageFileName": "images/fashion.svg",
+            "tagLine": "Trendy fasion made easy."
+        },
+        {
+            "name": "Creative Design Studios",
+            "email": "cds@designemail.com",
+            "phoneNumber": "789-012-3456",
+            "websiteUrl": "https://creativedesign.example.com",
+            "imageFileName": "images/cds.svg",
+            "tagLine": "Creative is what we do."
+        },
+        {
+            "name": "Smart Home Devices",
+            "email": "shd@smartemail.com",
+            "phoneNumber": "901-234-5678",
+            "websiteUrl": "https://smarthome.example.com",
+            "imageFileName": "images/smarthd.svg",
+            "tagLine": "Smart home for smart people."
+        }
+        
+    ]
+}

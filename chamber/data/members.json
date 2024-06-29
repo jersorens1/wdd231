@@ -2,83 +2,101 @@
     "members": [
         {
             "name": "Tech Solutions Inc.",
+            "tagLine": "The solution to all your tech.",
             "address": "123 Tech Street, Tech Town",
-            "phoneNumber": "+1-123-456-7890",
+            "phoneNumber": "123-456-7890",
             "websiteUrl": "https://techsolutions.example.com",
+            "email": "tsi@techsolemail.com",
             "imageFileName": "images/techsolutions.svg",
             "membershipLevel": "3",
             "otherInfo": "Leading provider of IT consulting and solutions."
         },
         {
             "name": "Green Energy Innovations",
+            "tagLine": "Clean energy is the priority.",
             "address": "456 Eco Avenue, Sustainable City",
-            "phoneNumber": "+1-234-567-8901",
+            "phoneNumber": "234-567-8901",
             "websiteUrl": "https://greenenergy.example.com",
+            "email": "gei@genergyemail.com",
             "imageFileName": "images/greenenergyinnovations.svg",
             "membershipLevel": "2",
             "otherInfo": "Specializes in renewable energy solutions."
         },
         {
             "name": "Food Express Logistics",
+            "tagLine": "Consistantly providing full bellies.",
             "address": "789 Food Park Drive, Culinary Village",
-            "phoneNumber": "+1-345-678-9012",
+            "phoneNumber": "345-678-9012",
             "websiteUrl": "https://foodexpress.example.com",
+            "email": "fel@foodexemail.com",
             "imageFileName": "images/foodexl.svg",
             "membershipLevel": "1",
             "otherInfo": "Provider of fast and reliable food delivery services."
         },
         {
             "name": "Fashion Trends Boutique",
+            "tagLine": "Trendy fasion made easy.",
             "address": "321 Style Street, Fashion City",
-            "phoneNumber": "+1-456-789-0123",
+            "phoneNumber": "456-789-0123",
             "websiteUrl": "https://fashiontrends.example.com",
+            "email": "ftb@fashionemail.com",
             "imageFileName": "images/fashion.svg",
             "membershipLevel": "2",
             "otherInfo": "Trendy clothing and accessories for all occasions."
         },
         {
             "name": "Healthcare Innovations Group",
+            "tagLine": "Providing exceptional medicine for all.",
             "address": "567 Wellness Boulevard, Med City",
-            "phoneNumber": "+1-567-890-1234",
+            "phoneNumber": "567-890-1234",
             "websiteUrl": "https://healthinnovations.example.com",
+            "email": "hig@healthcareemail.com",
             "imageFileName": "images/hcig.svg",
             "membershipLevel": "3",
             "otherInfo": "Pioneering healthcare solutions and medical technologies."
         },
         {
             "name": "Global Logistics Solutions",
+            "tagLine": "You are our priority.",
             "address": "890 Cargo Lane, Shipping Port",
-            "phoneNumber": "+1-678-901-2345",
+            "phoneNumber": "678-901-2345",
             "websiteUrl": "https://globallogistics.example.com",
+            "email": "gls@globallogemail.com",
             "imageFileName": "images/gls.svg",
             "membershipLevel": "1",
             "otherInfo": "Provider of comprehensive logistics and supply chain services."
         },
         {
             "name": "Creative Design Studios",
+            "tagLine": "Creative is what we do.",
             "address": "234 Art Avenue, Design District",
-            "phoneNumber": "+1-789-012-3456",
+            "phoneNumber": "789-012-3456",
             "websiteUrl": "https://creativedesign.example.com",
+            "email": "cds@designemail.com",
             "imageFileName": "images/cds.svg",
             "membershipLevel": "2",
             "otherInfo": "Innovative design solutions for digital and print media."
         },
         {
             "name": "Smart Home Devices",
+            "tagLine": "Smart home for smart people.",
             "address": "246 Home Automation Lane, Smart City",
-            "phoneNumber": "+1-901-234-5678",
+            "phoneNumber": "901-234-5678",
             "websiteUrl": "https://smarthome.example.com",
+            "email": "shd@smartemail.com",
             "imageFileName": "images/smarthd.svg",
             "membershipLevel": "1",
             "otherInfo": "Innovative devices for smart home automation."
         },
         {
             "name": "Adventure Travel Co.",
+            "tagLine": "Your journey is the adventure.",
             "address": "357 Adventure Road, Explore City",
-            "phoneNumber": "+1-012-345-6789",
+            "phoneNumber": "012-345-6789",
             "websiteUrl": "https://adventuretravel.example.com",
+            "email": "atc@adventureemail.com",
             "imageFileName": "images/adventuretravel.svg",
-            "membershipLevel": "2",
+            "membershipLevel": "3",
             "otherInfo": "Specializes in adventure and experiential travel."
         }
         

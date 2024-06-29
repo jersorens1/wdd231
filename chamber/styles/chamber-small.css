@@ -5,6 +5,7 @@
     --textColor: #fceccb;
 }
 
+/* Header */
 #cityLogo {
     float: left;
     width: 100px;
@@ -71,7 +72,6 @@
     display: block;
     margin: 0 auto 10px;
 }
-
 
 header, footer {
     background-color: var(--backgroundColor);
