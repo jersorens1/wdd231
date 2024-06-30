@@ -52,13 +52,13 @@ p {
 /* Menu button styling */
 #menu {
     font-size: 2rem;
-    border: 0;
+    border: none;
     background: none;
     color: #FFF8F0;
     position: absolute;
     cursor: pointer;
-    top: 20px;
-    right: 40px;
+    top: .9rem;
+    right: 4vh;
 }
 
 #menu::before {
@@ -106,6 +106,10 @@ p {
     background-color: #5BC0BE;
     color: #392F5A;
     font-weight: 500;
+}
+
+.current-menu-item {
+    background-color: #295278;
 }
 
 main {
@@ -186,14 +190,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .button-group button {
-    display: inline-block;
-    padding: 10px 60px;
+    display: flex;
+    padding: 10px 50px;
     border: none;
     background-color: #295278;
     color: #ffffff;
@@ -206,9 +210,10 @@ h2 {
 }
 
 .course-button {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     margin: 10px;
-    padding: 15px;
+    padding: 15px 55px;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
@@ -233,14 +238,39 @@ h2 {
 #credits {
     display: flex;
     padding-left: 20px;
+    padding-bottom: 10px;
 }
 
-.course-details {
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    left: 30%;
+    top: 15%;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* .course-details {
     margin-top: 20px;
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
-}
+} */
 
 .footer {
     grid-column: 1 / 4;

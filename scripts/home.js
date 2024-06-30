@@ -101,12 +101,21 @@ function displayCourses(filteredCourses) {
 }
 
 function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
     courseDetails.innerHTML = `
-        <h2>${course.subject} ${course.number}: ${course.title}</h2>
-        <p>${course.description}</p>
-        <p><strong>Credits:</strong> ${course.credits}</p>
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2><br>
+        <h3>${course.title}</h3><br>
+        <p><strong>Credits</strong>: ${course.credits}</p><br>
+        <p><strong>Certificate</strong>: ${course.certificate}</p><br>
+        <p><strong>Description</strong>: ${course.description}</p><br>
         <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
     `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
 }
 
 function filterCourses(subject) {
