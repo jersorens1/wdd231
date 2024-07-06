@@ -1,6 +1,6 @@
 // toggles hamburger menu icon to navigation list and displays close icon
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.nav');
+const navigation = document.querySelector('nav');
 
 // event listener for hamburger menu button. Toggle on and off for nav menu.
 hamButton.addEventListener('click', () => {
