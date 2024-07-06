@@ -73,6 +73,12 @@ nav.open {
     float: left;
     width: 100px;
     padding: 0 2rem 1rem 1rem;
+    animation: fadeIn ease 6s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .hero {
@@ -96,7 +102,7 @@ nav.open {
     transform: translate(-50%, -50%);
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    color: white;
+    color: var(--backgroundColor);
     background-color: var(--primaryColor);
     border: none;
     border-radius: 5px;

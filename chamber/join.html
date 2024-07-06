@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremy Sorensen">
+    <meta name="description" content="WDD 231 - Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 231 - Chamber of Commerce, Jeremy Sorensen">
+    <meta property="og:url" content="https://slchamber.com/">
+    <meta property="og:image" content="https://slchamber.com/wp-content/uploads/2018/05/ChamberLogoNavy-1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/last-city-icon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Last City Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div><img src="images/lastcity-logo.svg" id="cityLogo" alt="Last City Logo"></div>
+        <h1>Last City</h1>
+        <p>Chamber of Commerce</p>
+        <nav id="animateme">
+            <button id="menuButton"></button>
+            <ul class="menuLinks">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li class="current-menu-item"><a href="join.html" title="Join">Join</a></li>
+                <li><a href="#" title="Discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Chamber of Commerce Membership</h2>
+    <div class="form-container">
+        <div class="membership-container">
+            <button id="modal-button">Learn About Our Membership Levels</button>
+        </div>
+        <form method="get" action="thankyou.html">
+            <label for="first-name">First Name:
+                <input type="text" id="first-name" name="first" title="Applicant's First Name" autocomplete="given-name" required>
+            </label>
+            <br>
+            <label for="last-name">Last Name:
+                <input type="text" id="last-name" name="last" title="Applicant's Last Name" autocomplete="family-name" required>
+            </label>
+            <br>
+            <label for="org-title">Organizational Title:
+                <input type="text" id="org-title" name="org-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z-\s]{7,}" required>
+            </label>
+            <br>
+            <label for="email">Email:
+                <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="example@example.com" required>
+            </label>
+            <br>
+            <label for="phone">Mobile Phone Number:
+                <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+            </label>
+            <br>
+            <label for="organization">Business/Organization Name:
+                <input type="text" id="organization" name="organization" title="Business/Organization Name" autocomplete="organization" required>
+            </label>
+            <br>
+            <label for="membership-level">Membership Level:
+                <select id="membership-level" name="membership-level" title="Membership Level">
+                    <option value="Non-profit">NP Membership (Non-profit)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+            <br>
+            <label for="description">Business/Organization Description:
+                <textarea id="description" name="description" title="Business/Organization Description"></textarea>
+            </label>
+            <br>
+            <input type="hidden" id="timestamp" name="timestamp" value="timestamp">
+            <br>
+            <input type="submit" value="Complete Membership">
+        </form>
+    </div>
+        <dialog id="membership-modal">
+            <h2>Membership Benefits</h2>
+            <p><strong>NP Membership:</strong> No fee, limited benefits.</p>
+            <p><strong>Bronze Membership:</strong> $400/ year ~ Basic benefits, access to events.</p>
+            <p><strong>Silver Membership:</strong> $800/ year ~ Additional training and advertising opportunities.</p>
+            <p><strong>Gold Membership:</strong> $1,000/ year ~ All benefits including special events and spotlight positions.</p>
+            <button id="close-modal">Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <div id="left-footer">
+            <p><h4>Last City Chamber of Commerce</h4></p>
+            <p>7777 Main St<br>
+            Last City, LC 77777<br>
+            LCCOC@lastcityemail.com<br>
+            (777) 777-7777</p>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.youtube.com">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://www.x.com">
+                <img src="images/x.svg" alt="X">
+            </a>
+            <a href="https://www.indeed.com">
+                <img src="images/indeed.svg" alt="Indeed">
+            </a>
+        </div>
+
+        <div id="right-footer">
+        <p>WDD 231 Chamber Project</p>
+        Jeremy Sorensen<br>
+        &copy; <span id="currentyear"></span> Last City Chamber of Commerce<br>
+        <span id="lastmodified"></span>
+    </div>
+
+    </footer>
+</body>
+</html>

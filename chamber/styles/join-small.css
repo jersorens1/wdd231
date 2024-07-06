@@ -1,0 +1,330 @@
+:root {
+    --primaryColor: #f5666f;
+    --secondaryColor: #92a4af;
+    --backgroundColor: #130328;
+    --textColor: #fceccb;
+    /* checkmark */
+    --check-size: 75px;
+    --check-border-width: 2px;
+    --checkmark-width: calc(var(--check-size) / 2);
+    --checkmark-height: calc(var(--checkmark-width) / 2);
+    --checkmark-left: calc(var(--checkmark-width) / 2);
+    --checkmark-top: 50%;
+    --checkmark-color: #92a4af;
+}
+
+/* NAVIGATION ITEMS */
+nav {
+    background-color: var(--backgroundColor);
+}
+
+#menuButton::before {
+    content: "\2630";
+}
+
+#menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--textColor);
+    cursor: pointer;
+    width: 44px;
+    text-align: right;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: .9rem;
+    right: 4vw;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+li.current-menu-item a {
+    background-color: #39205a;
+    border-radius: 5px;
+}
+
+ul.menuLinks {
+    list-style-type: none; 
+}
+
+#menuButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+#viewToggle {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Header, Footer CSS */
+#cityLogo {
+    float: left;
+    width: 100px;
+    padding: 0 2rem 1rem 1rem;
+    animation: fadeIn ease 6s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+header, footer {
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+    padding: 1rem;
+}
+
+footer {
+   text-align: center;
+   display: flex;
+   padding: 1rem;
+   width: 100%;
+   bottom: 0;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 1rem 0;
+}
+
+/* Body and Main CSS */
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #39205a;
+    padding: 20px;
+}
+
+.membership-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: var(--primaryColor);
+    color: var(--backgroundColor);
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--textColor);
+    color: var(--backgroundColor);
+}
+
+button {
+    background-color: var(--primaryColor);
+    color: var(--backgroundColor);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--textColor);
+    color: var(--backgroundColor);
+}
+
+#modal-button {
+    margin-bottom: 20px;
+}
+
+dialog {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#membership-level {
+    animation: highlight 3s infinite alternate;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #39205a;
+    color: var(--textColor);
+    border-radius: 10px;
+    border: 2px solid var(--secondaryColor);
+    padding: 20px;
+}
+
+#results a {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+@keyframes highlight {
+    from { background-color: #ffffff; }
+    to { background-color: #e6d9f8; }
+}
+
+/* checkmark animation */
+.checkmark-wrapper {
+    width: var(--check-size);
+    height: var(--check-size);
+    position: relative;
+    margin: 40px auto 40px auto;
+}
+
+.checkmark-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: var(--check-border-width) solid #f8f8f8;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    z-index: 0;
+}
+
+.checkmark-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: var(--check-border-width) solid transparent;
+    border-left-color: var(--checkmark-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    z-index: 1;
+    animation: circle linear forwards .75s;
+}
+
+.checkmark {
+height: var(--checkmark-height);
+width: var(--checkmark-width);
+position: absolute;
+opacity: 0;
+left: var(--checkmark-left);
+top: var(--checkmark-top);
+display: block;
+border-left: var(--check-border-width) solid var(--checkmark-color);
+border-bottom: var(--check-border-width) solid var(--checkmark-color);
+transform-origin: left top;
+transform: rotate(-45deg);
+animation: checkmark linear both 1s;
+}
+
+@keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+      }
+      80% {
+        height: 0;
+        width: 0;
+        opacity: 0;  
+      }
+      90% {
+        height: var(--checkmark-height);
+        width: 0;
+        opacity: 1;
+      }
+      100% {
+        height: var(--checkmark-height);
+        width: var(--checkmark-width);
+        opacity: 1;
+      }
+}
+
+@keyframes circle {
+    0% {
+        border-color: transparent;
+        border-left-color: var(--checkmark-color);
+    }
+    90% {
+        transform: rotate(-360deg);
+        border-color: transparent;
+        border-left-color: var(--checkmark-color);
+    }
+    100% {
+        transform: rotate(-360deg);
+        border-color: var(--checkmark-color);
+    }
+}
+/* End checkmark animation */
+
+
+
+/* Small Viewports */
+@media screen and (max-width: 768px){
+
+    footer {
+     display: flex;
+     flex-direction: column;
+    }
+}    

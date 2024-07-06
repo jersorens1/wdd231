@@ -14,13 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/last-city-icon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/join-small.css">
     <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/advertisers.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <title>Last City Chamber of Commerce</title>
+    <title>Thank you</title>
 </head>
 <body>
     <header>
@@ -30,45 +29,21 @@
         <nav id="animateme">
             <button id="menuButton"></button>
             <ul class="menuLinks">
-                <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
                 <li><a href="directory.html" title="Directory">Directory</a></li>
                 <li><a href="join.html" title="Join">Join</a></li>
                 <li><a href="#" title="Discover">Discover</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="hero">
-                <img src="images/city-sunset.webp" alt="city">
-                <button class="hero-button">Sign Up</button>
-        </div>        
-        <div>
-            <h2>Home</h2>
-        </div>
-        <div class="container">    
-            <div class="events-card">
-            <h3>Events</h3>
-            <p class="placeholder"></p>
-            </div>
-            <div class="current-weather-card">
-            <h3>Current Weather</h3>
-            <div><img id="weather-icon" alt="current-weather-icon"></div>
-            <p><span id="current-temp"></span></p>
-            <figcaption></figcaption>
-            <p>Feels Like: <span id="feels-like"></span></p>
-            <p>High: <span id="temp-high"></span></p>
-            <p>Low: <span id="temp-low"></span></p>
-            <p>Humidity: <span id="humidity"></span></p>
-            </div>
-            <div class="weather-forecast-card">
-            <h3>Weather Forecast</h3>
-            <p>Today: <span id="today-temp"></span></p>
-            <p>Friday: <span id="tomorrow-temp"></span></p>
-            <p>Saturday: <span id="next-day-temp"></span></p>
-            </div>
-        </div>
-        <div id="advertisements"></div>
-    </main>
+<main>
+<h2>Thank you for completing your membership!</h2>
+
+<div class="checkmark-wrapper"><span class="checkmark"></span></div>
+
+<div id="results"></div>
+
+</main> 
     <footer>
         <div id="left-footer">
             <p><h4>Last City Chamber of Commerce</h4></p>
