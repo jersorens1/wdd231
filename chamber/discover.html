@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremy Sorensen">
+    <meta name="description" content="WDD 231 - Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 231 - Chamber of Commerce, Jeremy Sorensen">
+    <meta property="og:url" content="https://slchamber.com/">
+    <meta property="og:image" content="https://slchamber.com/wp-content/uploads/2018/05/ChamberLogoNavy-1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/lastcityfavicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Last City Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div><img src="images/lastcity-logo.svg" id="cityLogo" alt="Last City Logo"></div>
+        <h1>Last City</h1>
+        <p>Chamber of Commerce</p>
+        <nav id="animateme">
+            <button id="menuButton"></button>
+            <ul class="menuLinks">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li><a href="join.html" title="Join">Join</a></li>
+                <li class="current-menu-item"><a href="discover.html" title="Discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Discover</h2>
+    <div><span id="visits"></span></div>
+    <main class="discover-main">
+        <aside class="sidebar-left">
+            <div id="card1">
+            <h3>About Last City</h3>
+            <p id="left-side">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dolor nihil libero aliquid ipsa sit blanditiis? Explicabo, magnam tempora consectetur consequuntur at expedita saepe exercitationem facilis qui quia quisquam libero.</p>
+            <p id="left-side">Assumenda placeat hic vitae voluptatem at similique blanditiis sapiente nobis, repudiandae consectetur velit nisi libero nihil nesciunt voluptatum numquam, quidem, doloribus magni optio dicta id? Perspiciatis necessitatibus est maxime porro.</p>
+            </div>
+            <div id="card2">
+             <h3>Events</h3>
+             <ul id="left-side">
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta voluptatibus minus ratione error quod alias a facilis iste! Facilis aperiam est consequuntur eaque repudiandae omnis! Ipsa eius obcaecati quis aut?</li>
+                <li>Perspiciatis ea inventore facere porro expedita veritatis voluptate harum nostrum quae sequi non saepe id nobis impedit quisquam, at animi reprehenderit labore cupiditate enim ut, ipsam et eligendi obcaecati. Ipsum!</li>
+                <li>Autem eius velit rerum, nulla quasi inventore voluptates, optio deleniti quis expedita amet at ipsa ut? Nostrum architecto excepturi optio mollitia sint? Hic repudiandae nulla tenetur saepe nostrum. Quos, ex.</li>
+                <li>Temporibus rem possimus aperiam delectus obcaecati impedit ab, quia deserunt magni dolor quaerat laborum ducimus odio tempora quae dignissimos debitis quos distinctio, repudiandae officia commodi? Tempore odit quo nobis libero.</li>
+             </ul>
+            </div>
+            <div id="card3">
+                <h3>Calendar</h3>
+                <div class="calendar">
+                    <div class="calendar-header">
+                      <span class="month-picker" id="month-picker"> July </span>
+                      <div class="year-picker" id="year-picker">
+                        <span class="year-change" id="pre-year">
+                          <pre><</pre>
+                        </span>
+                        <span id="year">2024 </span>
+                        <span class="year-change" id="next-year">
+                          <pre>></pre>
+                        </span>
+                      </div>
+                    </div>
+              
+                    <div class="calendar-body">
+                      <div class="calendar-week-days">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                      </div>
+                      <div class="calendar-days">
+                      </div>
+                    </div>
+                    <div class="calendar-footer">
+                    </div>
+                    <div class="date-time-formate">
+                      <div class="day-text-formate">TODAY</div>
+                      <div class="date-time-value">
+                        <div class="time-formate">01:41:20</div>
+                        <div class="date-formate">03 - march - 2022</div>
+                      </div>
+                    </div>
+                    <div class="month-list"></div>
+                  </div>
+            </div>
+            <div id="card4">
+                <h3>Thanks to our Sponsors</h3>
+               <p id="left-side">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quibusdam sint tempore maiores reprehenderit quia, nobis accusantium sed tempora alias sit labore magnam totam dolores inventore quidem quasi eius dolor.</p>
+               <p id="left-side">Culpa necessitatibus optio eius dolore hic dolor quaerat debitis at dolores vel. Quidem provident praesentium nulla amet repellendus ducimus, sequi deserunt ratione cumque perspiciatis exercitationem veniam nam saepe veritatis quos!</p>
+            </div>
+        </aside>
+        <div class="right-side">
+            <div>
+                <img src="images/golfer.webp" loading="lazy" alt="golf">
+                <p id="caption">Award Winning Golf Courses</p>
+            </div>
+            <div>
+                <img src="images/park.webp" loading="lazy" alt="park">
+                <p id="caption">Grand End Park</p>
+            </div>
+            <div>
+                <img src="images/playground.webp" loading="lazy" alt="playground">
+                <p id="caption">Kid-Safe Playgrounds</p>
+            </div>
+            <div>
+                <img src="images/zoo.webp" loading="lazy" alt="zoo">
+                <p id="caption">Finale Zoo</p>
+            </div>
+        </div>
+    
+    </main>
+    <footer>
+        <div id="left-footer">
+            <p><h4>Last City Chamber of Commerce</h4></p>
+            <p>7777 Main St<br>
+            Last City, LC 77777<br>
+            LCCOC@lastcityemail.com<br>
+            (777) 777-7777</p>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.youtube.com">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://www.x.com">
+                <img src="images/x.svg" alt="X">
+            </a>
+            <a href="https://www.indeed.com">
+                <img src="images/indeed.svg" alt="Indeed">
+            </a>
+        </div>
+
+        <div id="right-footer">
+        <p>WDD 231 Chamber Project</p>
+        Jeremy Sorensen<br>
+        &copy; <span id="currentyear"></span> Last City Chamber of Commerce<br>
+        <span id="lastmodified"></span>
+    </div>
+
+    </footer>
+</body>
+</html>
