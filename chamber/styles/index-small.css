@@ -150,8 +150,8 @@ h2 {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-rows: auto; */
     margin: 2rem 2rem;
     gap: 1.5rem;
 }
@@ -175,17 +175,10 @@ h2 {
     font-size: 20px;
 }
 
-ul {
+.homeList {
     margin: 1em 1.5em;
-    list-style-type: square;
+    list-style-type: disc;
 }
-
-/* .placeholder {
-    visibility: hidden;
-    max-height: 100px;
-    width: 100%;
-    background: transparent;
-} */
 
 #weather-icon {
     margin: auto;
@@ -264,26 +257,29 @@ figcaption {
 }
 
 #visits {
-    margin: 50px;
+    margin-left: 2em;
+    padding: 10px;
+    font-size: 18px;
 }
 
 .discover-main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
     justify-items: center;
-    gap: 30px;
-    margin: 30px;
+    margin-left: 20px;
 }
 
 .sidebar-left {
     border: 4px solid var(--primaryColor);
     border-radius: 20px;
     box-shadow: 0 0 20px var(--secondaryColor);
+    margin-bottom: 40px;
+    width: 37rem;
 }
 
-#card1, #card2, #card3, #card4 {
-    padding: 20px 10px 20px 10px;
-    margin: 10px;
+#card1, #card2, #card3, #card4, #card5, #card6 {
+    padding: 15px;
+    margin: 0;
 }
 
 #left-side {
@@ -291,17 +287,19 @@ figcaption {
 }
 
 .right-side img {
+    height: 350px;
+    width: 100%;
     border-radius: 30px;
     border: 4px solid var(--primaryColor);
     box-shadow: 0 0 20px var(--secondaryColor);
-    margin: 0 10px 10px 30px;
+    margin: 0;
 }
 
 #caption {
     font-size: 18px;
     font-weight: 500;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-bottom: 50px;
     background-color: #39205a;
     padding: 10px;
@@ -312,14 +310,12 @@ figcaption {
 /* Calendar Info */
 .calendar {
     height: 30rem;
-    width: max-content;
+    width: auto;
     background-color: var(--secondaryColor);
     border-radius: 25px;
     overflow: hidden;
-    align-content: center;
-    padding: 35px 50px 35px 50px;
+    padding: 40px 30px 40px 30px;
     margin: 40px;
-    margin-left: 3rem;
     border: 3px solid var(--textColor);
   }
   
@@ -336,21 +332,11 @@ figcaption {
     padding: 10px;
   }
   
-  .calendar-body {
-    padding: 10px;
-  }
-  
   .calendar-week-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     font-weight: 600;
   }
-  
-  /* .calendar-week-days div:hover {
-    color: black;
-    transform: scale(1.2);
-    transition: all .2s ease-in-out;
-  } */
   
   .calendar-week-days div {
     display: grid;
@@ -427,13 +413,6 @@ figcaption {
   .calendar-days div span {
     position: absolute;
   }
-  
-  /* .calendar-days div:hover {
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-    background-color: #39205a;
-    border-radius: 20%;
-    color: #fff;
-  } */
   
   .calendar-days div.current-date {
     color: var(--textColor);
@@ -637,11 +616,6 @@ figcaption {
 
     #advertisements {
         grid-template-columns: 1fr;
-    }
-
-    .discover-main {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
     }
 
     .right-side {

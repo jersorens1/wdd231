@@ -21,6 +21,26 @@
         transition: .5s;
         border-radius: 5px;
     }
+
+    .right-side img {
+        height: 350px;
+        width: 100%;
+        border-radius: 30px;
+        border: 4px solid var(--primaryColor);
+        box-shadow: 0 0 20px var(--secondaryColor);
+        margin: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .right-side img:hover {
+        border: 5px solid var(--textColor);
+        border-radius: 30px;
+        box-shadow: 0 0 50px var(--secondaryColor);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+      }
 }
 
 footer {
