@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremy Sorensen">
+    <meta name="description" content="WDD 231 - Final Project">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 231 - Final Project, Jeremy Sorensen">
+    <meta property="og:url" content="https://www.themoviedb.org/">
+    <meta property="og:image" content="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/cinetrends-favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/cinetrends.css">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+    <script src="scripts/cinetrends.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>CineTrends</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CineTrends</h1>
+        </div>
+        <nav id="animateme">
+            <button id="menuButton"></button>
+            <ul class="menuLinks">
+                <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li>
+                <li><a href="movies.html" title="Movies">Trending Movies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-image">
+            <div class="hero-container">
+                <p id="visits"></p>
+            <h2 class="home-text"><span>Welcome to CineTrends!</span></h2>
+            <span class="site-info">Here, we offer a comprehensive and dynamic movie database 
+                website that keeps you updated with the latest trends in the film industry.</span>
+            <a class="btn" href="movies.html">Learn More</a>
+            </div>
+    </div>
+<div class="home-images">
+    <div><img class="image1" src="https://images.unsplash.com/photo-1659497379075-a807be116f74?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+    <div><img class="image2" src="https://images.unsplash.com/photo-1619518594466-5bfc2dcbb83d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+    <div><img class="image3" src="https://images.unsplash.com/photo-1540320865252-e4abf9e80004?q=80&w=2561&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+</div>
+    </main>
+ 
+    <footer>
+        <div><p>&copy; <span id="currentyear"></span> CineTrends &#x2013; <span id="lastmodified"></span></p>
+        <p><a href="references.html" id="references">References</a></p></div>
+    </footer>    
+</body>
+</html>
